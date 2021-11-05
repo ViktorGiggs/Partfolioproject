@@ -1,0 +1,40 @@
+.container {
+    
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.calculator {
+    background-color: tomato;
+    padding-left: 3px;
+}
+
+button {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+input {
+    width: 215px;
+    height: 50px;
+    font-size: 30px;
+    margin: 4px;
+    margin-left: 3px;
+}
+
+.panel1 > button {
+    background-color: rgb(102, 188, 245);
+}
+
+#equally {
+    background-color: rgb(65, 224, 145);
+}
+
+#clear {
+    background-color: rgb(255, 5, 55);
+}

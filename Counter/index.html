@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <section>
+        <p class="elem">Counter</p>
+        <h1 class="counter">0</h1>
+        <button id="buttonMinus">DECREASE</button>
+        <button id="buttonRest">RESET</button>
+        <button id="buttonPlus">INCREASE</button>
+    </section>
+
+
+    <style>
+        
+        section{
+        text-align: center;
+        padding: 10rem;
+        }
+
+        .elem{
+            font-size: 40px;
+        }
+
+        .counter{
+            font-size: 50px;
+        }
+
+        button{
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 20px 20px 20px 20px;
+            margin: 10px;
+            border: none;
+            color: #25343b;
+        }
+
+        button:hover {
+            color: #3a7999;
+            box-shadow: inset 0 0 0 3px #3a7999;
+        }
+
+    </style>
+
+<script>
+    let counter = document.querySelector('.counter')
+    let plus = document.querySelector('#buttonPlus')
+    let rest = document.querySelector('#buttonRest')
+    let minus = document.querySelector('#buttonMinus')
+
+    minus.addEventListener('click', function (){
+        this.counter = counter.innerHTML--
+    })
+
+    plus.addEventListener('click', function (){
+        this.counter = counter.innerHTML++
+    })
+
+    rest.addEventListener('click', function (){
+        this.counter = counter.innerHTML = 0
+    })
+</script>
+</body>
+</html>

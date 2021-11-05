@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="button">Change color</button>
+
+
+<style>
+    #button{
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+        margin-left: 45%;
+        margin-top: 20%;
+        border-radius: 50px 50px 50px 50px;
+        border: 1px solid;
+    }
+</style>
+
+    <script>
+
+
+    let backGround = document.querySelector('body')
+    let elem = document.querySelector('#elem')
+    let arrColor = ["#FF0000", "#0000FF", "#008000", "#D2691E", "#00FFFF", "#000080","#000000", "#808080", "#FF00FF", "#00FF00", "#00FFFF"]
+    let button = document.getElementById('button')
+
+    button.addEventListener('click', function () {
+        backGround.style.background = arrColor[Math.floor(Math.random() * arrColor.length)]
+    })
+
+    </script>
+</body>
+</html>
