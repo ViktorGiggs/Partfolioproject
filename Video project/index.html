@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Video project</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <video class="video-container" muted autoplay loop>
-        <source src="Sand.mp4" type="video/mp4">
-    </video>
-    <h1>Video project</h1>
-    <button class="switch-btn">Stop</button>
+    <header>
+        <video class="video-container" muted autoplay loop>
+            <source src="Sand.mp4" type="video/mp4">
+        </video>
+        <h1>Video project</h1>
+        <button class="switch-btn">
+            <span>
+                play
+            </span>
+            <span>
+                pause
+            </span>
+            <span class="switch"></span>
+        </button>
+    </header>
 
-    <button class="tenet-btn">Play</button>
-</header>
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

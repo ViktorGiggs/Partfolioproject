@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato&family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #FFDB00;
+    font-family: 'Barlow', sans-serif;
+}
+
+.gift-img{
+    position:fixed;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+    margin-right: -13%;
+}
+
+.gift-info{
+    position:fixed;
+    width:50%;
+    height:100%;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.deadline{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.deadline-format{
+    background-color: black;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+}
+
+h4{
+    text-align: center;
+    color: #FFDB00;
+    font-size: 30px;
+}
+
+span{
+    color: #FFDB00;
+}

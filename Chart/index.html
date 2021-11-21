@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Graph</title>
+    <title>Chart</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap');
         *{
             margin: 0;
             padding: 0;
@@ -14,7 +15,7 @@
         }
 
         body{
-            background: #666;
+            background: #fff;
         }
 
         .container{
@@ -34,6 +35,13 @@
         canvas{
             border: 1px solid black;
         }
+
+        p{
+            margin-left: 21%;
+            padding: 10%;
+            font-size: xx-large;
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +50,8 @@
             <canvas id="chart"></canvas>
         </div>
     </div>
+
+    <p>An example of using canvas for plotting</p>
 
     <script src="app.js"></script>
 </body>

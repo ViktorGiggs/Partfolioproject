@@ -1,5 +1,5 @@
 body{
-    background-color: palegoldenrod;
+    background-color: #27969d;
 }
 
 .container{
@@ -13,12 +13,14 @@ body{
     width: 300px;
     height: 100px;
     font-size: 35px;
-    background-color: palegreen;
+    border-radius: 20px;
+    background-color: #fcde26;
 }
 
 .modal-container{
     height: 30%;
     width: 40%;
+    border-radius: 20px;
     background-color: seashell;
     border: black solid 1px;
     position: absolute;
@@ -26,7 +28,7 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    text-align: right;
+    text-align: center;
     display: none;
 }
 
@@ -37,11 +39,13 @@ body{
 
 .close{
     cursor: pointer;
+    display: flex;
+    justify-content: right;
 }
 
 .rainbow{
+    padding-top: 20px;
     font-size: 40px;
-    display: flex;
     animation: animation infinite 2s linear;
 }
 
@@ -57,6 +61,18 @@ body{
     }
     100% {
         color: orange;
+    }
+}
+
+@media (max-width:891px) {
+    .modal-container{
+        height: 200px;
+    }
+}
+
+@media (max-width:544px) {
+    .rainbow{
+        margin-top: -20px;
     }
 }
 

@@ -10,8 +10,8 @@ let paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
-let brickRowCount = 5;
-let brickColumnCount = 3;
+let brickRowCount = 8;
+let brickColumnCount = 5;
 let brickWidth = 75;
 let brickHeight = 20;
 let brickPadding = 10;
@@ -19,6 +19,8 @@ let brickOffsetTop = 30;
 let brickOffsetLeft = 30;
 let score = 0;
 let lives = 3;
+
+canvas.style.background = "hsl(20 3% 19%)"
 
 let bricks = [];
 for (let c = 0; c < brickColumnCount; c++) {
@@ -78,14 +80,14 @@ function collisionDetection() {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#d8a657";
     ctx.fill();
     ctx.closePath();
 }
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#d8a657";
     ctx.fill();
     ctx.closePath();
 }
@@ -99,7 +101,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#0095DD";
+                ctx.fillStyle = "#d8a657";
                 ctx.fill();
                 ctx.closePath();
             }
@@ -108,12 +110,12 @@ function drawBricks() {
 }
 function drawScore() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#d8a657";
     ctx.fillText("Score: " + score, 8, 20);
 }
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#d8a657";
     ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
 }
 

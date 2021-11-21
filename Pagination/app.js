@@ -12,6 +12,23 @@ let users = [
 	{name: 'name11', surname: 'surname11', age: 30},
 	{name: 'name12', surname: 'surname12', age: 30},
 	{name: 'name13', surname: 'surname13', age: 30},
+	{name: 'name14', surname: 'surname14', age: 30},
+	{name: 'name15', surname: 'surname15', age: 30},
+	{name: 'name16', surname: 'surname16', age: 30},
+	{name: 'name17', surname: 'surname17', age: 30},
+	{name: 'name18', surname: 'surname18', age: 30},
+	{name: 'name19', surname: 'surname19', age: 30},
+	{name: 'name20', surname: 'surname20', age: 30},
+	{name: 'name21', surname: 'surname21', age: 30},
+	{name: 'name22', surname: 'surname22', age: 30},
+	{name: 'name23', surname: 'surname23', age: 30},
+	{name: 'name24', surname: 'surname24', age: 30},
+	{name: 'name25', surname: 'surname25', age: 30},
+	{name: 'name26', surname: 'surname26', age: 30},
+	{name: 'name27', surname: 'surname27', age: 30},
+	{name: 'name28', surname: 'surname28', age: 30},
+	{name: 'name29', surname: 'surname29', age: 30},
+	{name: 'name30', surname: 'surname30', age: 30},
 ];
 
 let table = document.querySelector('#table');

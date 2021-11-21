@@ -154,4 +154,6 @@ h2 + p::before {
 	font-size: 25px;
 	background-color: var(--aqua);
 	color: var(--black);
+	border: 2px solid;
+	border-color: var(--black);
 }

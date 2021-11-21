@@ -1,3 +1,31 @@
+body{
+	background: linear-gradient(to right, #25c481, #25b7c4);
+	font-family: 'Roboto', sans-serif;
+	align-content: center;
+}
+
+table { 
+	border-spacing: 1; 
+	border-collapse: collapse; 
+	background:white;
+	overflow: hidden;
+	max-width: 800px; 
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+thead tr { 
+    height: 60px;
+    background: #FFED86;
+    font-size: 16px;
+}
+
+tbody td {
+	height: 48px;
+	border-bottom: 1px solid #E3F1D5 ;
+}
+
 #table td {
 	padding: 10px;
 	border: 1px solid black;
@@ -5,10 +33,12 @@
 
 #pagination {
 	display: flex;
-	padding: 0;
+	justify-content: center;
+	padding-top: 20px;
 	list-style-type: none;
 }
 #pagination li {
+	background-color: white;
 	margin-right: 5px;
 	padding: 10px;
 	border: 1px solid black;

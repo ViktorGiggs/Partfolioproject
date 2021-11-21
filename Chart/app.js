@@ -51,7 +51,7 @@ chart(document.getElementById('chart'),[
     [600, 300],
     [800, 80],
     [1000, 120],
-    [1200, 0]
+    [1200, 40]
 ])
 
 function computeBoundaries(data) {

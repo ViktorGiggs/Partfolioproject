@@ -36,4 +36,11 @@ input.addEventListener('blur', function () {
     input.placeholder = 'Name...'
 })
 
-// Модернизировать при нажатии на ентер и локал сторэйдж
+input.addEventListener('keydown', function (e) {
+    if (e.keyCode === 13) {
+        createElements(input.value)
+    }
+    if (e.keyCode === 13) {
+        input.value = ''
+    }
+})

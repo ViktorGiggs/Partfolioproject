@@ -91,7 +91,7 @@ main .main-about{
     display: inline-block;
     border-bottom: 3px solid #fcac45;
     padding-bottom: 20px;
-    margin-left: 180px;
+    margin-left: 140px;
 }
 .about-right h3:after{
     display: none;

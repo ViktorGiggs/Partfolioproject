@@ -2,7 +2,7 @@
 
 *{
     font-family: 'Roboto', sans-serif;
-    background-color: #d3efeb;
+    background-color: #7E57C2;
 }
 
 h1{
@@ -10,6 +10,7 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 50px;
+    color: #FFFFFF;
 }
 
 .apply{
@@ -21,23 +22,49 @@ h1{
 input{
     height: 2rem;
     width: 40rem;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: #B7BEC8;
+}
+
+input:focus{
+    box-shadow: 0.2rem 0.8rem 1.6rem #5e35b1
 }
 
 .add{
     height: 2.4rem;
     margin-left: -2px;
+    background-color: #FFF200;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .deleter{
     right: 0;
     top: 0;
-    background-color: red;
+    background-color: rgb(197, 31, 31);
     color: wheat;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
     cursor: pointer;
     border-radius: 3px;
     width: 15%;
     line-height: 20px;
-    text-align: center;
-    display: block;
+    margin-left: 100px;
+}
+
+ul{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 100px;
+}
+
+li{
+    color: wheat;
+    font-size: 25px;
+    padding-top: 20px;
 }
